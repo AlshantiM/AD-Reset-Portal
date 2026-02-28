@@ -8,6 +8,7 @@
         :root {
             --royal-blue: #4169E1;
             --dark-blue: #27408B;
+            --whatsapp-green: #25D366;
             --light-bg: #f8f9fa;
         }
 
@@ -28,11 +29,10 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border-top: 12px solid var(--royal-blue); /* التزام بتصميم AD */
+            border-top: 12px solid var(--royal-blue); /* التزام بتصميم AD المعتمد */
             text-align: center;
         }
 
-        /* الجزء العلوي - الهوية الرسمية */
         .header-section {
             border-bottom: 2px solid #eee;
             padding-bottom: 20px;
@@ -59,7 +59,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* صندوق التعليمات المطور */
         .info-box {
             background-color: #f0f4ff;
             border-right: 5px solid var(--royal-blue);
@@ -99,17 +98,35 @@
             font-size: 18px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(65, 105, 225, 0.3);
+            margin-bottom: 20px;
         }
 
         .btn-action:hover {
             background-color: var(--dark-blue);
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(65, 105, 225, 0.4);
+        }
+
+        /* تنسيق قسم الواتساب */
+        .whatsapp-support {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 25px;
+            padding: 10px;
+            border-top: 1px solid #eee;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .whatsapp-support:hover {
+            color: var(--whatsapp-green);
         }
 
         .footer-text {
-            margin-top: 25px;
-            font-size: 12px;
+            margin-top: 15px;
+            font-size: 11px;
             color: #999;
         }
     </style>
@@ -125,7 +142,7 @@
 
         <div style="font-size: 40px; margin-bottom: 10px;">🔐</div>
         <h3 style="color: #333; margin-top: 0;">Password Reset Portal</h3>
-        <p style="color: #777;">بوابة الخدمة الذاتية لإعادة تعيين كلمة المرور</p>
+        <p style="color: #777; font-size: 14px;">بوابة الخدمة الذاتية لإعادة تعيين كلمة المرور</p>
 
         <div class="info-box">
             <h3>💡 معايير كلمة السر الجديدة:</h3>
@@ -133,11 +150,15 @@
                 <li>يجب أن تتكون من <strong>8 خانات</strong> على الأقل.</li>
                 <li>يجب أن تحتوي على حروف كبيرة وصغيرة <strong>(A, a)</strong>.</li>
                 <li>يجب أن تحتوي على أرقام <strong>(0-9)</strong>.</li>
-                <li>يُفضل إضافة رموز مثل (#, $, @) لزيادة الأمان.</li>
             </ul>
         </div>
 
         <a href="https://passwordreset.microsoftonline.com/" class="btn-action">ابدأ عملية التغيير الآن</a>
+
+        <a href="https://wa.me/17278417" class="whatsapp-support" target="_blank">
+            <span>للدعم الفني عبر واتساب: 17278417</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M12.031 6.172c-2.277 0-4.132 1.855-4.132 4.132 0 .633.148 1.259.436 1.821l-2.023 2.023c-.15.15-.224.347-.224.545 0 .44.356.796.796.796.198 0 .395-.074.545-.224l2.023-2.023c.563.288 1.189.436 1.821.436 2.277 0 4.132-1.855 4.132-4.132s-1.855-4.132-4.132-4.132zm0 6.963c-1.561 0-2.831-1.27-2.831-2.831s1.27-2.831 2.831-2.831 2.831 1.27 2.831 2.831-1.27 2.831-2.831 2.831z"/></svg>
+        </a>
 
         <div class="footer-text">
             &copy; 2026 AD Project - Ministry of Education
