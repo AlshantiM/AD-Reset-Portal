@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Directorate - Password Reset Portal</title>
+    <style>
+        :root {
+            --royal-blue: #4169E1;
+            --dark-blue: #27408B;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--light-bg);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .main-container {
+            background: white;
+            width: 95%;
+            max-width: 550px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 12px solid var(--royal-blue); /* التزام بتصميم AD */
+            text-align: center;
+        }
+
+        /* الجزء العلوي - الهوية الرسمية */
+        .header-section {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-section h1 {
+            font-size: 22px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .header-section h2 {
+            font-size: 18px;
+            color: var(--royal-blue);
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        .header-section p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* صندوق التعليمات المطور */
+        .info-box {
+            background-color: #f0f4ff;
+            border-right: 5px solid var(--royal-blue);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: var(--royal-blue);
+            font-size: 16px;
+        }
+
+        .info-box ul {
+            margin: 10px 20px 0 0;
+            padding: 0;
+            list-style-type: square;
+            color: #444;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .btn-action {
+            display: block;
+            background-color: var(--royal-blue);
+            color: white;
+            padding: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(65, 105, 225, 0.3);
+        }
+
+        .btn-action:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(65, 105, 225, 0.4);
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="header-section">
+            <h1>وزارة التربية والتعليم</h1>
+            <h2>إدارة تقنية المعلومات والتعليم الرقمي</h2>
+            <p>Directorate of Information Technology</p>
+        </div>
+
+        <div style="font-size: 40px; margin-bottom: 10px;">🔐</div>
+        <h3 style="color: #333; margin-top: 0;">Password Reset Portal</h3>
+        <p style="color: #777;">بوابة الخدمة الذاتية لإعادة تعيين كلمة المرور</p>
+
+        <div class="info-box">
+            <h3>💡 معايير كلمة السر الجديدة:</h3>
+            <ul>
+                <li>يجب أن تتكون من <strong>8 خانات</strong> على الأقل.</li>
+                <li>يجب أن تحتوي على حروف كبيرة وصغيرة <strong>(A, a)</strong>.</li>
+                <li>يجب أن تحتوي على أرقام <strong>(0-9)</strong>.</li>
+                <li>يُفضل إضافة رموز مثل (#, $, @) لزيادة الأمان.</li>
+            </ul>
+        </div>
+
+        <a href="https://passwordreset.microsoftonline.com/" class="btn-action">ابدأ عملية التغيير الآن</a>
+
+        <div class="footer-text">
+            &copy; 2026 AD Project - Ministry of Education
+        </div>
+    </div>
+
+</body>
+</html>
